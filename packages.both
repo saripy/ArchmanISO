@@ -119,6 +119,7 @@ lightdm-gtk-greeter-settings
 ################################
 ## office # ofis uygulamaları ##
 ################################
+epdfview
 #abiword
 #gnumeric
 #libreoffice-still
