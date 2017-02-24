@@ -84,8 +84,8 @@ pamac-aur
 #######################################################
 ## artwork and font packages - temave font paketleri ##
 #######################################################
+vibrancy-colors-icon-theme
 breeze-vertex
-vibrancy-colors
 cantarell-fonts
 archman-wallpapers
 archman-icons
@@ -131,7 +131,7 @@ epdfview
 ##################################
 xdotool
 screenfetch
-#mugshot
+mugshot
 virtualgl
 leafpad
 htop
@@ -164,12 +164,12 @@ gvfs-smb
 hexchat
 mlocate
 #mousepad
-#parole
 pidgin
 #evince
 #raktpdf
 viewnior
 #vlc
+#qt4
 parole
 xfburn
 #xnoise
@@ -265,7 +265,7 @@ mtools
 ndisc6
 nfs-utils
 nilfs-utils
-nmap
+#nmap
 ntp
 openconnect
 openssh

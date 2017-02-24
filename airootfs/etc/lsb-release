@@ -1,5 +1,5 @@
 LSB_VERSION=1.4
-DISTRIB_ID="Archman OS"
-DISTRIB_RELEASE="Archman OS - 2017.02"
-DISTRIB_DESCRIPTION="Arch linux based - rolling release"
+DISTRIB_ID="Archman"
+DISTRIB_RELEASE="Archman - 2017.02"
+DISTRIB_DESCRIPTION="Archman GNU/Linux - rolling release"
 DISTRIB_CODENAME="Leptailurus-Serval"
