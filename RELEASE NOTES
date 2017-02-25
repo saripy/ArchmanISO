@@ -1,9 +1,15 @@
-## Archman GNU/Linux "Leptailurus Serval" Release Notes ##
+## Archman GNU/Linux "Leptailurus Serval" Release Notes ## 2017.02 PRE-2
 
 
 ## Things to do:
+archman gfxboot
+archman-welcome
+plymouth
 work on screenfetch
+............
+
 
 
 ## Bug:
-calamares not remove on installed system
+calamares not remove on installed system.
+(You should remove it on the installed system with package manager or command: "sudo pacman -R calamares" )
