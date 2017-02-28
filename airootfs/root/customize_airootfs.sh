@@ -70,13 +70,20 @@ function enableSudoFunc() {
     chmod -R 755 /etc/sudoers.d
     echo "Enabled Sudo"
 }
+#
+#function enableCalamaresAutostartFunc() {
+#    #Enable Calamares Autostart
+#    mkdir -p /home/liveuser/.config/autostart
+#    ln -s /usr/share/applications/calamares.desktop /home/liveuser/.config/autostart/calamares.desktop
+#    chmod +rx /home/liveuser/.config/autostart/calamares.desktop
+#    chown liveuser /home/liveuser/.config/autostart/calamares.desktop
+#}
 
 function enableCalamaresAutostartFunc() {
-    #Enable Calamares Autostart
-    mkdir -p /home/liveuser/.config/autostart
-    ln -s /usr/share/applications/calamares.desktop /home/liveuser/.config/autostart/calamares.desktop
-    chmod +rx /home/liveuser/.config/autostart/calamares.desktop
-    chown liveuser /home/liveuser/.config/autostart/calamares.desktop
+    #Enable Calamares Desktop
+    ln -s /usr/share/applications/calamares.desktop /home/liveuser/Desktop/calamares.desktop
+    chmod +rx /home/liveuser/Desktop/calamares.desktop
+    chown liveuser /home/liveuser/Desktop/calamares.desktop
 }
 
 function fixWifiFunc() {
@@ -94,7 +101,7 @@ function setDefaultCursorFunc() {
 
 function deleteObsoletePackagesFunc() {
     # delete obsolete network packages
-    pacman -Rns --noconfirm openresolv netctl dhcpcd mousepad
+    pacman -Rns --noconfirm openresolv netctl dhcpcd mousepad ristretto
 }
 
 function configRootUserFunc() {
