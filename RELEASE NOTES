@@ -1,4 +1,4 @@
-## Archman GNU/Linux "Leptailurus Serval" Release Notes ## 2017.02 PRE-2
+## Archman GNU/Linux "Leptailurus Serval" Release Notes ## 2017.03 RC-2
 
 
 ## Things to do:
@@ -10,6 +10,5 @@ work on screenfetch
 
 
 
-## Bug:
-calamares not remove on installed system.
-(You should remove it on the installed system with package manager or command: "sudo pacman -R calamares" )
+## Bugs:
+...
