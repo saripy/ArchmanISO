@@ -195,6 +195,7 @@ os-prober
 lsb-release
 linux-firmware
 syslinux
+reflector
 exfat-utils
 #virtualbox
 virtualbox-guest-modules-arch
