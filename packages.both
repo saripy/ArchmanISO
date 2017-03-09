@@ -142,6 +142,7 @@ xarchiver
 polkit-gnome
 gnome-disk-utility
 wget
+uget
 squashfs-tools
 ntfs-3g
 gptfdisk
