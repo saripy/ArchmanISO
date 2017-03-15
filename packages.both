@@ -84,11 +84,17 @@ pamac-aur
 #######################################################
 ## artwork and font packages - temave font paketleri ##
 #######################################################
+#gfxboot
 vibrancy-colors-icon-theme
 breeze-vertex
 cantarell-fonts
+ttf-ubuntu-font-family
+ttf-ms-fonts
+noto-fonts
+ttf-liberation
 archman-wallpapers
 archman-icons
+qt5ct
 
 
 #####################
@@ -122,8 +128,8 @@ lightdm-gtk-greeter-settings
 epdfview
 #abiword
 #gnumeric
-#libreoffice-still
-#libreoffice-still-tr
+libreoffice-still
+libreoffice-still-tr
 
 
 ##################################
@@ -142,7 +148,6 @@ xarchiver
 polkit-gnome
 gnome-disk-utility
 wget
-uget
 squashfs-tools
 ntfs-3g
 gptfdisk
@@ -153,8 +158,8 @@ udisks2
 catfish
 midori
 galculator-gtk2
-#gimp
-#inkscape
+gimp
+inkscape
 gksu
 gparted
 gvfs
@@ -198,8 +203,9 @@ linux-firmware
 syslinux
 reflector
 exfat-utils
-#virtualbox
+virtualbox
 virtualbox-guest-modules-arch
+virtualbox-host-modules-arch
 virtualbox-guest-utils
 
 
@@ -290,6 +296,7 @@ testdisk
 usb_modeswitch
 vim-minimal
 vpnc
+imagewriter
 
 
 ##########################################################

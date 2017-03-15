@@ -1,5 +1,6 @@
 #!/bin/bash
 # ARCHISO BUILD COMMAND: "sudo ./build.sh -v -o out"
+ rm -r /home/tulliana/ArchmanISO/work out
 # rm -rf /var/cache/pacman/pkg/*
 
 pacman-key --init
@@ -8,7 +9,8 @@ pacman-key --populate
 set -e -u
 
 iso_name=archman	
-iso_label="ARCHMAN_$(date +%Y%m)"
+iso_label="ARCHMAN"
+#iso_label="ARCHMAN_$(date +%Y%m)"
 iso_version=$(date +%Y.%m.%d)
 install_dir=arch
 work_dir=work
