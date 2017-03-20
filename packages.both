@@ -156,7 +156,6 @@ libdvdcss
 udiskie
 udisks2
 catfish
-midori
 galculator-gtk2
 gimp
 inkscape
@@ -207,7 +206,9 @@ virtualbox
 virtualbox-guest-modules-arch
 virtualbox-host-modules-arch
 virtualbox-guest-utils
-
+#midori
+firefox
+firefox-i18n-tr
 
 ####################################
 ## java packages # java paketleri ##
