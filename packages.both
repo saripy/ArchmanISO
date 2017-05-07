@@ -16,7 +16,7 @@ intel-ucode
 ####################################
 xorg
 xorg-server
-xorg-server-utils
+#xorg-server-utils
 xorg-xinit
 xorg-twm xterm
 

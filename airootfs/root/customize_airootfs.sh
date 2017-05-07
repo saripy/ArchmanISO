@@ -167,6 +167,9 @@ function doNotDisturbTheLiveUserFunc() {
     echo '</channel>' >> $pathToPerchannel
 }
 
+function upgradeSystem() {
+    pacman -Syuu --noconfirm
+}
 
 initFunc
 initkeysFunc
@@ -186,3 +189,5 @@ setDefaultCursorFunc
 fixWifiFunc
 fixPermissionsFunc
 initkeysFunc
+upgradeSystem
+#dconf update # apply dconf settings

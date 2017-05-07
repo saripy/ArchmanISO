@@ -1,6 +1,6 @@
 #!/bin/bash
 # ARCHISO BUILD COMMAND: "sudo ./build.sh -v -o out"
- rm -r /home/tulliana/ArchmanISO/work out
+ #rm -r /home/tulliana/ArchmanISO/work out
 # rm -rf /var/cache/pacman/pkg/*
 
 pacman-key --init
@@ -220,7 +220,14 @@ make_prepare() {
 
 # Build ISO
 make_iso() {
-    mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -o "${out_dir}" iso "${iso_name}-${iso_version}-dual.iso"
+    out_filename="archman-$(date +%y%m)_x86_64.iso"
+    mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -o "${out_dir}" iso $out_filename
+    cd ${out_dir}
+    echo "Signing ISO file..."
+    gpg --detach-sign --no-armor $out_filename
+    md5sum $out_filename >> md5sum
+    
+    echo "finished!"
 }
 
 if [[ ${EUID} -ne 0 ]]; then
