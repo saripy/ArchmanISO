@@ -13,4 +13,5 @@ alias pac="sudo pacman -S"
 alias pacs="sudo pacman -Ss"
 alias pacu="sudo pacman -Syy"
 alias update="sudo pacman -Syu"
-alias startx=mate-session
+alias startx=startxfce4
+#alias startx=mate-session

@@ -13,4 +13,6 @@ fi
 
 /usr/bin/VBoxClient-all
 
+#exec startxfce4
 #exec mate-session
+

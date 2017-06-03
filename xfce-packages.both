@@ -146,7 +146,7 @@ unrar
 unzip
 p7zip
 #xarchiver
-ark
+engrampa-thunar
 polkit-gnome
 gnome-disk-utility
 wget
