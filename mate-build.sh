@@ -1,5 +1,5 @@
 #!/bin/bash
-# ARCHISO BUILD COMMAND: "sudo ./build.sh -v -o out"
+# ARCHISO BUILD COMMAND: "sudo ./mate-build.sh -v -o out"
 #rm -r /home/tulliana/ArchmanISO/work out
 # rm -rf /var/cache/pacman/pkg/*
 
