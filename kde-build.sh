@@ -106,8 +106,8 @@ make_customize_airootfs() {
 
     lynx -dump -nolist 'https://wiki.archlinux.org/index.php/Installation_Guide?action=render' >> ${work_dir}/${arch}/airootfs/root/install.txt
 
-    setarch ${arch} mkarchiso ${verbose} -w "${work_dir}/${arch}" -C "${work_dir}/pacman.conf" -D "${install_dir}" -r '/root/kde-customize_airootfs.sh' run
-    rm ${work_dir}/${arch}/airootfs/root/kde-customize_airootfs.sh
+    setarch ${arch} mkarchiso ${verbose} -w "${work_dir}/${arch}" -C "${work_dir}/pacman.conf" -D "${install_dir}" -r '/root/kde_customize_airootfs.sh' run
+    rm ${work_dir}/${arch}/airootfs/root/kde_customize_airootfs.sh
 }
 
 # Prepare kernel/initramfs ${install_dir}/boot/
