@@ -15,4 +15,5 @@ fi
 
 #exec startxfce4
 #exec mate-session
+#exec startkde
 

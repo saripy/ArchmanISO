@@ -15,3 +15,4 @@ alias pacu="sudo pacman -Syy"
 alias update="sudo pacman -Syu"
 alias startx=startxfce4
 #alias startx=mate-session
+#alias startx=startkde

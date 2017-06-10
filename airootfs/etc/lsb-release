@@ -1,6 +1,7 @@
 LSB_VERSION=1.4
 DISTRIB_ID="Archman"
-DISTRIB_RELEASE="Archman - 2017.06 Mate"
-#DISTRIB_RELEASE="Archman - 2017.06 Xfce"
+DISTRIB_RELEASE="Archman - 2017.06 Xfce"
+#DISTRIB_RELEASE="Archman - 2017.06 Mate"
+#DISTRIB_RELEASE="Archman - 2017.06 KDE_Plasma"
 DISTRIB_DESCRIPTION="Archman Linux - rolling release"
-DISTRIB_CODENAME="Lion"
+DISTRIB_CODENAME="Panthera_Leo"
