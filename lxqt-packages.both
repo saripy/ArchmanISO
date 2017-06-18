@@ -1,5 +1,5 @@
 ##########################
-## Packages-Archman Mate##
+## Packages-Archman LxQt##
 ##########################
 
 
@@ -59,10 +59,9 @@ xf86-video-sis
 ########################################################
 ## desktop environment pakcages # masaüstü yöneticisi ##
 ########################################################
-mate
-mate-extra
-brisk-menu
-archman-mate-settings
+lxqt
+archman-lxqt-settings
+xcompmgr
 archman-example-files
 xdg-user-dirs
 
@@ -122,12 +121,12 @@ lightdm-gtk-greeter-settings
 ################################
 ## office # ofis uygulamaları ##
 ################################
-#epdfview
+epdfview
 #abiword
 #gnumeric
 #diffuse
-libreoffice-still
-libreoffice-still-tr
+#libreoffice-still
+#libreoffice-still-tr
 
 
 ##################################
@@ -138,13 +137,14 @@ screenfetch
 #mugshot
 virtualgl
 #leafpad
+kate
 htop
 unrar
 unzip
 p7zip
-engrampa
+file-roller
 polkit-gnome
-gnome-disk-utility
+#gnome-disk-utility
 wget
 squashfs-tools
 ntfs-3g
@@ -155,27 +155,29 @@ udiskie
 udisks2
 #catfish
 galculator-gtk2
-gimp
-inkscape
-gksu
+#gimp
+#inkscape
+#gksu
 gparted
 gvfs
 gvfs-afc
 gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
-hexchat
+#hexchat
+#pidgin
+konversation
 mlocate
 #mousepad
-pidgin
 #evince
 #raktpdf
 #viewnior
-#vlc
-#qt4
+vlc
+clementine
+qt4
 #parole
-smplayer
-xfburn
+#smplayer
+#xfburn
 #xnoise
 yelp
 xcursor-simpleandsoft
@@ -188,7 +190,6 @@ accountsservice
 light-locker
 #menulibre
 orage
-#plank
 poppler-glib
 gnome-keyring
 wvdial
@@ -198,14 +199,14 @@ os-prober
 lsb-release
 linux-firmware
 syslinux
+inxi
 reflector
 exfat-utils
-inxi
 virtualbox
 virtualbox-guest-modules-arch
 virtualbox-host-modules-arch
 virtualbox-guest-utils
-midori
+qupzilla
 uget
 #firefox
 #firefox-i18n-tr

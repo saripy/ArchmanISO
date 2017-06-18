@@ -64,6 +64,7 @@ xf86-video-sis
 ########################################################
 kdebase
 #kde-applications ##for minimal
+#archman-kde-settings ##working for kde settings
 kde-l10n-tr
 plasma
 yakuake
@@ -194,6 +195,7 @@ linux-firmware
 syslinux
 reflector
 exfat-utils
+inxi
 virtualbox
 virtualbox-guest-modules-arch
 virtualbox-host-modules-arch
