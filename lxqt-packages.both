@@ -91,7 +91,7 @@ ttf-liberation
 archman-wallpapers
 archman-icons
 archmanos-gtk3-theme
-qt5ct
+#qt5ct
 
 
 #####################
@@ -137,7 +137,8 @@ screenfetch
 #mugshot
 virtualgl
 #leafpad
-kate
+#kate
+notepadqq
 htop
 unrar
 unzip
