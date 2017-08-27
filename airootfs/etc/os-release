@@ -1,5 +1,7 @@
 NAME="Archman"
 ID=archman
-PRETTY_NAME="Archman"
-ANSI_COLOR="0;36"
-HOME_URL="https://archman.org"
+PRETTY_NAME="Archman Linux"
+ANSI_COLOR="0;35"
+HOME_URL="http://archman.org"
+SUPPORT_URL="http://archman.org/forum"
+BUG_REPORT_URL="https://github.com/Archman-OS/ArchmanISO/issues"
