@@ -1,6 +1,6 @@
-##########################
-## Packages-Archman Mate##
-##########################
+############################
+## Packages-Archman Budgie##
+############################
 
 
 ####################################
@@ -59,10 +59,10 @@ xf86-video-sis
 ########################################################
 ## desktop environment pakcages # masaüstü yöneticisi ##
 ########################################################
-mate
-mate-extra
-brisk-menu
-archman-mate-settings
+budgie-desktop-git
+gnome
+gnome-extra
+archman-budgie-settings
 archman-example-files
 xdg-user-dirs
 
@@ -143,7 +143,7 @@ htop
 unrar
 unzip
 p7zip
-engrampa
+#engrampa
 polkit-gnome
 gnome-disk-utility
 wget
@@ -155,7 +155,7 @@ libdvdcss
 udiskie
 udisks2
 #catfish
-galculator-gtk2
+#galculator-gtk2
 gimp
 inkscape
 gksu
@@ -168,7 +168,7 @@ gvfs-smb
 hexchat
 mlocate
 #mousepad
-pidgin
+#pidgin
 #evince
 #raktpdf
 #viewnior
@@ -176,7 +176,7 @@ pidgin
 #qt4
 #parole
 smplayer
-xfburn
+#xfburn
 #xnoise
 yelp
 xcursor-simpleandsoft
@@ -206,10 +206,10 @@ virtualbox
 virtualbox-guest-modules-arch
 virtualbox-host-modules-arch
 virtualbox-guest-utils
-midori
+#midori
 uget
-#firefox
-#firefox-i18n-tr
+firefox
+firefox-i18n-tr
 
 ####################################
 ## java packages # java paketleri ##

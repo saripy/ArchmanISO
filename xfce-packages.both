@@ -87,6 +87,7 @@ pamac-aur
 ########################################################
 #gfxboot
 vibrancy-colors-icon-theme
+papirus-icon-theme
 breeze-vertex
 cantarell-fonts
 ttf-ubuntu-font-family
@@ -213,6 +214,8 @@ virtualbox-guest-utils
 uget
 firefox
 firefox-i18n-tr
+thunderbird
+thunderbird-i18n-tr
 
 ####################################
 ## java packages # java paketleri ##
