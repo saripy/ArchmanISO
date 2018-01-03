@@ -179,6 +179,7 @@ viewnior
 #vlc
 #qt4
 #parole
+quodlibet
 smplayer
 xfburn
 #xnoise
@@ -262,6 +263,7 @@ dmraid
 dnsmasq
 dnsutils
 dosfstools
+dmidecode
 #elinks
 ethtool
 fsarchiver
