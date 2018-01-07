@@ -1,6 +1,6 @@
-###########################
-## Packages-Archman Xfce ##
-###########################
+#############################
+## Packages-Archman Deepin ##
+#############################
 
 
 ####################################
@@ -45,7 +45,6 @@ alsa-utils
 pulseaudio 
 pulseaudio-alsa
 pavucontrol
-xfce4-pulseaudio-plugin
 pulseaudio-bluetooth
 pulseaudio-zeroconf
 gst-libav
@@ -60,14 +59,11 @@ xf86-video-sis
 ########################################################
 ## desktop environment pakcages # masaüstü yöneticisi ##
 ########################################################
-xfce4
-xfce4-goodies
-thunar-archive-plugin
-thunar-media-tags-plugin
+deepin
+deepin-extra
 archman-example-files
 xdg-user-dirs
-archman-xfce-settings
-#xscreensaver
+#archman-deepin-settings
 
 
 #########################################
@@ -86,9 +82,7 @@ pamac-aur
 ## artwork and font packages - tema ve font paketleri ##
 ########################################################
 #gfxboot
-vibrancy-colors-icon-theme
 papirus-icon-theme
-breeze-vertex
 cantarell-fonts
 ttf-ubuntu-font-family
 ttf-ms-fonts
@@ -128,29 +122,30 @@ lightdm-slick-greeter
 ################################
 ## office # ofis uygulamaları ##
 ################################
-epdfview
+#epdfview
 #abiword
 #gnumeric
 #diffuse
-libreoffice-still
-libreoffice-still-tr
+#libreoffice-still
+#libreoffice-still-tr
 
 
 ##################################
 ## extra packages # ek paketler ##
 ##################################
-xdotool
-screenfetch
-mugshot
+#xdotool
+#screenfetch
+#mugshot
 virtualgl
-leafpad
+#leafpad
+notepadqq
 htop
 unrar
 unzip
 p7zip
 #xarchiver
-engrampa-thunar
-polkit-gnome
+#engrampa-thunar
+#polkit-gnome
 gnome-disk-utility
 wget
 squashfs-tools
@@ -160,10 +155,10 @@ flashplugin
 libdvdcss
 udiskie
 udisks2
-catfish
-galculator-gtk2
-gimp
-inkscape
+#catfish
+#galculator-gtk2
+#gimp
+#inkscape
 gksu
 gparted
 gvfs
@@ -174,20 +169,20 @@ gvfs-smb
 hexchat
 mlocate
 #mousepad
-pidgin
+#pidgin
 #evince
 #raktpdf
-viewnior
+#viewnior
 #vlc
 #qt4
 #parole
-quodlibet
-smplayer
-xfburn
+#quodlibet
+#smplayer
+#xfburn
 #xnoise
 yelp
-xcursor-simpleandsoft
-xcursor-vanilla-dmz-aa
+#xcursor-simpleandsoft
+#xcursor-vanilla-dmz-aa
 git
 ffmpegthumbnailer
 gconf

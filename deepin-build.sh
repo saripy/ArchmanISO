@@ -1,5 +1,5 @@
 #!/bin/bash
-# ARCHISO BUILD COMMAND: "sudo ./xfce-build.sh -v -o ISO"
+# ARCHISO BUILD COMMAND: "sudo ./deepin-build.sh -v -o ISO"
 #rm -r /home/tulliana/ArchmanISO/work out
 # rm -rf /var/cache/pacman/pkg/*
 
@@ -66,7 +66,7 @@ make_basefs() {
 
 # Additional packages (airootfs)
 make_packages() {
-    setarch ${arch} mkarchiso ${verbose} -w "${work_dir}/${arch}" -C "${work_dir}/pacman.conf" -D "${install_dir}" -p "$(grep -h -v ^# ${script_path}/xfce-packages.{both,${arch}})" install
+    setarch ${arch} mkarchiso ${verbose} -w "${work_dir}/${arch}" -C "${work_dir}/pacman.conf" -D "${install_dir}" -p "$(grep -h -v ^# ${script_path}/deepin-packages.{both,${arch}})" install
 }
 
 # Needed packages for x86_64 EFI boot
@@ -106,8 +106,8 @@ make_customize_airootfs() {
 
     lynx -dump -nolist 'https://wiki.archlinux.org/index.php/Installation_Guide?action=render' >> ${work_dir}/${arch}/airootfs/root/install.txt
 
-    setarch ${arch} mkarchiso ${verbose} -w "${work_dir}/${arch}" -C "${work_dir}/pacman.conf" -D "${install_dir}" -r '/root/xfce_customize_airootfs.sh' run
-    rm ${work_dir}/${arch}/airootfs/root/xfce_customize_airootfs.sh
+    setarch ${arch} mkarchiso ${verbose} -w "${work_dir}/${arch}" -C "${work_dir}/pacman.conf" -D "${install_dir}" -r '/root/deepin_customize_airootfs.sh' run
+    rm ${work_dir}/${arch}/airootfs/root/deepin_customize_airootfs.sh
 }
 
 # Prepare kernel/initramfs ${install_dir}/boot/

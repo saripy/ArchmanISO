@@ -87,12 +87,12 @@ function enableSudoFunc() {
 #    chown liveuser /home/liveuser/.config/autostart/calamares.desktop
 #}
 
-function enableCalamaresAutostartFunc() {
-    #Enable Calamares Desktop
-    ln -s /usr/share/applications/calamares.desktop /home/liveuser/Desktop/calamares.desktop
-    chmod +rx /home/liveuser/Desktop/calamares.desktop
-    chown liveuser /home/liveuser/Desktop/calamares.desktop
-}
+#function enableCalamaresAutostartFunc() {
+#    Enable Calamares Desktop
+#    ln -s /usr/share/applications/calamares.desktop /home/liveuser/Desktop/calamares.desktop
+#    chmod +rx /home/liveuser/Desktop/calamares.desktop
+#    chown liveuser /home/liveuser/Desktop/calamares.desktop
+#}
 
 function fixWifiFunc() {
     #Wifi not available with networkmanager
@@ -109,7 +109,7 @@ function setDefaultCursorFunc() {
 
 function deleteObsoletePackagesFunc() {
     # delete obsolete network packages
-    pacman -Rns --noconfirm openresolv netctl dhcpcd mousepad ristretto
+    pacman -Rns --noconfirm openresolv netctl dhcpcd
 }
 
 function configRootUserFunc() {
@@ -161,19 +161,19 @@ function editOrCreateConfigFilesFunc () {
 #    arch=`uname -m`
 #}
 
-function doNotDisturbTheLiveUserFunc() {
-    #delete old config file
-    pathToPerchannel="/home/$USER/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml"
-    rm -rf $pathToPerchannel
-    #create a new file
-    touch $pathToPerchannel
-    echo '<?xml version="1.0" encoding="UTF-8"?>' >> $pathToPerchannel
-    echo '' >> $pathToPerchannel
-    echo '<channel name="xfce4-notifyd" version="1.0">' >> $pathToPerchannel
-    echo '  <property name="notify-location" type="uint" value="3"/>' >> $pathToPerchannel
-    echo '  <property name="do-not-disturb" type="bool" value="true"/>' >> $pathToPerchannel
-    echo '</channel>' >> $pathToPerchannel
-}
+#function doNotDisturbTheLiveUserFunc() {
+#    #delete old config file
+#    pathToPerchannel="/home/$USER/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml"
+#    rm -rf $pathToPerchannel
+#    #create a new file
+#    touch $pathToPerchannel
+#    echo '<?xml version="1.0" encoding="UTF-8"?>' >> $pathToPerchannel
+#    echo '' >> $pathToPerchannel
+#    echo '<channel name="xfce4-notifyd" version="1.0">' >> $pathToPerchannel
+#    echo '  <property name="notify-location" type="uint" value="3"/>' >> $pathToPerchannel
+#    echo '  <property name="do-not-disturb" type="bool" value="true"/>' >> $pathToPerchannel
+#    echo '</channel>' >> $pathToPerchannel
+#}
 
 #function upgradeSystem() {
 #    pacman -Syuu --noconfirm
@@ -192,11 +192,11 @@ setTimeZoneAndClockFunc
 editOrCreateConfigFilesFunc
 configRootUserFunc
 createLiveUserFunc
-doNotDisturbTheLiveUserFunc
+#doNotDisturbTheLiveUserFunc
 #renameOSFunc
 setDefaultsFunc
 enableSudoFunc
-enableCalamaresAutostartFunc
+#enableCalamaresAutostartFunc
 enableServicesFunc
 deleteObsoletePackagesFunc
 setDefaultCursorFunc
