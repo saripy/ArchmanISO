@@ -59,10 +59,11 @@ xf86-video-sis
 ########################################################
 ## desktop environment pakcages # masaüstü yöneticisi ##
 ########################################################
-budgie-desktop-git
+budgie-desktop
 gnome
-gnome-extra
+#gnome-extra
 archman-budgie-settings
+#archman-settings-manager
 archman-example-files
 xdg-user-dirs
 
@@ -114,9 +115,11 @@ system-config-printer
 ######################################
 ## login manager # giriş yöneticisi ##
 ######################################
-lightdm 
-lightdm-gtk-greeter 
-lightdm-gtk-greeter-settings
+lightdm
+lightdm-settings
+lightdm-slick-greeter
+#lightdm-gtk-greeter
+#lightdm-gtk-greeter-settings
 
 
 
@@ -127,8 +130,8 @@ lightdm-gtk-greeter-settings
 #abiword
 #gnumeric
 #diffuse
-libreoffice-still
-libreoffice-still-tr
+#libreoffice-still
+#libreoffice-still-tr
 
 
 ##################################
@@ -139,6 +142,7 @@ screenfetch
 #mugshot
 virtualgl
 #leafpad
+gedit
 htop
 unrar
 unzip
@@ -156,8 +160,8 @@ udiskie
 udisks2
 #catfish
 #galculator-gtk2
-gimp
-inkscape
+#gimp
+#inkscape
 gksu
 gparted
 gvfs
@@ -208,8 +212,9 @@ virtualbox-host-modules-arch
 virtualbox-guest-utils
 #midori
 uget
-firefox
-firefox-i18n-tr
+#thunderbird
+#firefox
+#firefox-i18n-tr
 
 ####################################
 ## java packages # java paketleri ##

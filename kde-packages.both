@@ -181,7 +181,7 @@ ffmpegthumbnailer
 gconf
 gufw
 accountsservice
-light-locker
+#light-locker
 #menulibre
 orage
 #plank

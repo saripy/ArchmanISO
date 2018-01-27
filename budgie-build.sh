@@ -1,5 +1,5 @@
 #!/bin/bash
-# ARCHISO BUILD COMMAND: "sudo ./budgie-build.sh -v -o out"
+# ARCHISO BUILD COMMAND: "sudo ./budgie-build.sh -v -o ISO"
 #rm -r /home/tulliana/ArchmanISO/work out
 # rm -rf /var/cache/pacman/pkg/*
 

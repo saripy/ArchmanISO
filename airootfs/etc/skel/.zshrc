@@ -18,5 +18,5 @@ alias update="sudo pacman -Syyu"
 alias mirrors="sudo reflector --verbose --latest 15 --sort rate --save /etc/pacman.d/mirrorlist"
 alias upgrade="sudo reflector --verbose --latest 15 --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syyu"
 alias clean="sudo pacman -Scc"
-alias remove="sudo pacman -Rsnc"
+alias remove="sudo pacman -R"
 

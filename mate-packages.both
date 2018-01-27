@@ -114,9 +114,11 @@ system-config-printer
 ######################################
 ## login manager # giriş yöneticisi ##
 ######################################
-lightdm 
-lightdm-gtk-greeter 
-lightdm-gtk-greeter-settings
+lightdm
+lightdm-settings
+lightdm-slick-greeter
+#lightdm-gtk-greeter
+#lightdm-gtk-greeter-settings
 
 
 

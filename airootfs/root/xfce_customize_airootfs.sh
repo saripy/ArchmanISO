@@ -179,10 +179,6 @@ function doNotDisturbTheLiveUserFunc() {
 #    pacman -Syuu --noconfirm
 #}
 
-function umaskFunc() {
-    set -e -u
-    umask 022
-}
 
 umaskFunc
 initFunc
