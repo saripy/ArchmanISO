@@ -40,6 +40,13 @@ function initkeysFunc() {
     pacman-key --populate archlinux
 }
 
+function fixHaveged(){
+    systemctl start haveged
+    systemctl enable haveged
+
+    rm -fr /etc/pacman.d/gnupg
+}
+
 function fixPermissionsFunc() {
     #add missing /media directory
     mkdir -p /media
@@ -55,6 +62,7 @@ function enableServicesFunc() {
     systemctl enable org.cups.cupsd.service
     systemctl enable avahi-daemon.service
     systemctl enable vboxservice.service
+    systemctl enable bluetooth.service
     systemctl enable haveged
     systemctl enable systemd-networkd.service
     systemctl enable systemd-resolved.service
@@ -137,21 +145,21 @@ function editOrCreateConfigFilesFunc () {
     sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
 }
 
-function renameOSFunc() {
-    #Name Archman
-    osReleasePath='/usr/lib/os-release'
-    rm -rf $osReleasePath
-    touch $osReleasePath
-    echo 'NAME="'${OSNAME}'"' >> $osReleasePath
-    echo 'ID=archman' >> $osReleasePath
-    echo 'PRETTY_NAME="'${OSNAME}'"' >> $osReleasePath
-    echo 'ANSI_COLOR="0;35"' >> $osReleasePath
-    echo 'HOME_URL="http://archman.org"' >> $osReleasePath
-    echo 'SUPPORT_URL="http://archman.org/forum"' >> $osReleasePath
-    echo 'BUG_REPORT_URL="http://archman.org/forum"' >> $osReleasePath
-
-    arch=`uname -m`
-}
+#function renameOSFunc() {
+#    #Name Archman
+#    osReleasePath='/usr/lib/os-release'
+#    rm -rf $osReleasePath
+#    touch $osReleasePath
+#    echo 'NAME="'${OSNAME}'"' >> $osReleasePath
+#    echo 'ID=archman' >> $osReleasePath
+#    echo 'PRETTY_NAME="'${OSNAME}'"' >> $osReleasePath
+#    echo 'ANSI_COLOR="0;35"' >> $osReleasePath
+#    echo 'HOME_URL="http://archman.org"' >> $osReleasePath
+#    echo 'SUPPORT_URL="http://archman.org/forum"' >> $osReleasePath
+#    echo 'BUG_REPORT_URL="http://archman.org/forum"' >> $osReleasePath
+#
+#    arch=`uname -m`
+#}
 
 #function doNotDisturbTheLiveUserFunc() {
 #    #delete old config file
@@ -167,10 +175,12 @@ function renameOSFunc() {
 #    echo '</channel>' >> $pathToPerchannel
 #}
 
-function upgradeSystem() {
-    pacman -Syuu --noconfirm
-}
+#function upgradeSystem() {
+#    pacman -Syuu --noconfirm
+#}
 
+
+umaskFunc
 initFunc
 initkeysFunc
 localeGenFunc
@@ -179,7 +189,7 @@ editOrCreateConfigFilesFunc
 configRootUserFunc
 createLiveUserFunc
 #doNotDisturbTheLiveUserFunc
-renameOSFunc
+#renameOSFunc
 setDefaultsFunc
 enableSudoFunc
 #enableCalamaresAutostartFunc
@@ -188,6 +198,7 @@ deleteObsoletePackagesFunc
 setDefaultCursorFunc
 fixWifiFunc
 fixPermissionsFunc
+fixHaveged
 initkeysFunc
-upgradeSystem
+#upgradeSystem
 #dconf update # apply dconf settings

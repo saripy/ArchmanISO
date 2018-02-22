@@ -64,11 +64,12 @@ xf86-video-sis
 ########################################################
 kdebase
 #kde-applications ##for minimal
-#archman-kde-settings ##working for kde settings
+archman-kde-settings
 kde-l10n-tr
 plasma
 yakuake
 konversation
+spectacle
 
 
 
@@ -88,16 +89,17 @@ pamac-aur
 ## artwork and font packages - temave font paketleri ##
 #######################################################
 #gfxboot
-vibrancy-colors-icon-theme
-papirus-icon-theme
+#vibrancy-colors-icon-theme
+#papirus-icon-theme
 breeze-vertex
 cantarell-fonts
-ttf-ubuntu-font-family
-ttf-ms-fonts
+#ttf-ubuntu-font-family
+#ttf-ms-fonts
 noto-fonts
 ttf-liberation
-archman-wallpapers
+#archman-wallpapers
 archman-icons
+archman-settings-manager
 qt5ct
 
 
@@ -141,10 +143,12 @@ htop
 unrar
 unzip
 p7zip
-xarchiver
+ark
+#xarchiver
 polkit-gnome
 gnome-disk-utility
 wget
+kget
 squashfs-tools
 ntfs-3g
 gptfdisk
@@ -162,16 +166,17 @@ gvfs-afc
 gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
-hexchat
+#hexchat
 mlocate
 #evince
 #raktpdf
 viewnior
-#vlc
-#qt4
+vlc
+clementine
+qt4
 #parole
-smplayer
-xfburn
+#smplayer
+#xfburn
 #xnoise
 yelp
 xcursor-simpleandsoft
@@ -201,8 +206,11 @@ virtualbox
 virtualbox-guest-modules-arch
 virtualbox-host-modules-arch
 virtualbox-guest-utils
-qupzilla
+#qupzilla
 xdg-user-dirs
+filezilla
+firefox
+firefox-i18n-tr
 
 
 ####################################
@@ -252,7 +260,7 @@ dnsutils
 dosfstools
 #elinks
 ethtool
-fsarchiver
+#fsarchiver
 gnu-netcat
 gpm
 grml-zsh-config
@@ -261,7 +269,7 @@ hdparm
 ipw2100-fw
 ipw2200-fw
 irssi
-lftp
+#lftp
 linux-atm
 lsscsi
 mc

@@ -85,6 +85,7 @@ pamac-aur
 vibrancy-colors-icon-theme
 papirus-icon-theme
 breeze-vertex
+breeze-icons
 cantarell-fonts
 ttf-ubuntu-font-family
 ttf-ms-fonts
@@ -263,7 +264,8 @@ dnsutils
 dosfstools
 #elinks
 ethtool
-fsarchiver
+#fsarchiver
+ark
 gnu-netcat
 gpm
 grml-zsh-config
