@@ -47,12 +47,12 @@ function fixHaveged(){
     rm -fr /etc/pacman.d/gnupg
 }
 
-function fixPermissionsFunc() {
-    #add missing /media directory
-    mkdir -p /media
-    chmod 755 -R /media
 
+function fixPermissionsFunc() {
     #fix permissions
+    chown root:root /
+    chown root:root /etc
+    chown root:root /etc/default
     chown root:root /usr
     chmod 755 /etc
 }
