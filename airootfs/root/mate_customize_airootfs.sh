@@ -40,7 +40,18 @@ function initkeysFunc() {
     pacman-key --populate archlinux
 }
 
+function fixHaveged(){
+    systemctl start haveged
+    systemctl enable haveged
+
+    rm -fr /etc/pacman.d/gnupg
+}
+
 function fixPermissionsFunc() {
+    #add missing /media directory
+    mkdir -p /media
+    chmod 755 -R /media
+
     #fix permissions
     chown root:root /
     chown root:root /etc
