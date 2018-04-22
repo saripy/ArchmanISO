@@ -94,6 +94,7 @@ ttf-liberation
 archman-wallpapers
 archman-icons
 archmanos-gtk3-theme
+archman-budgie-backgrounds
 qt5ct
 
 
@@ -120,7 +121,7 @@ lightdm-settings
 lightdm-slick-greeter
 #lightdm-gtk-greeter
 #lightdm-gtk-greeter-settings
-
+numlockx
 
 
 ################################
@@ -205,7 +206,7 @@ linux-firmware
 syslinux
 reflector
 exfat-utils
-inxi
+#inxi
 virtualbox
 virtualbox-guest-modules-arch
 virtualbox-host-modules-arch

@@ -1,7 +1,15 @@
 #!/bin/bash
-# ARCHISO BUILD COMMAND: "sudo ./xfce-build.sh -v -o ISO"
-#rm -r /home/tulliana/ArchmanISO/work out
+
+###ARCHISO BUILD COMMAND###
+# sudo ./budgie-build.sh -v -o ISO
+
+###BUILDING CLEANUP###
+# sudo rm -r /home/$USER/ArchmanISO/work ISO
+
+###CACHE CLEANUP###
 # rm -rf /var/cache/pacman/pkg/*
+# or, sudo pacman -Scc
+# or, clean
 
 pacman-key --init
 pacman-key --populate

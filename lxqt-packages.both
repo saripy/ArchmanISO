@@ -120,6 +120,7 @@ lightdm-settings
 lightdm-slick-greeter
 #lightdm-gtk-greeter
 #lightdm-gtk-greeter-settings
+numlockx
 
 
 
@@ -205,7 +206,7 @@ os-prober
 lsb-release
 linux-firmware
 syslinux
-inxi
+#inxi
 reflector
 exfat-utils
 virtualbox

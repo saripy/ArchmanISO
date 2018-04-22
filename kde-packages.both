@@ -201,7 +201,7 @@ linux-firmware
 syslinux
 reflector
 exfat-utils
-inxi
+#inxi
 virtualbox
 virtualbox-guest-modules-arch
 virtualbox-host-modules-arch

@@ -124,6 +124,7 @@ lightdm-settings
 lightdm-slick-greeter
 #lightdm-gtk-greeter
 #lightdm-gtk-greeter-settings
+numlockx
 
 
 ################################
@@ -209,7 +210,7 @@ linux-firmware
 syslinux
 reflector
 exfat-utils
-inxi
+#inxi
 virtualbox
 virtualbox-guest-modules-arch
 virtualbox-host-modules-arch
@@ -218,8 +219,8 @@ virtualbox-guest-utils
 uget
 firefox
 firefox-i18n-tr
-thunderbird
-thunderbird-i18n-tr
+#thunderbird
+#thunderbird-i18n-tr
 
 ####################################
 ## java packages # java paketleri ##
